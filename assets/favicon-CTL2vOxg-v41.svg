@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#0D2459"/>
+  <!-- Shield shape -->
+  <path d="M16 4 L26 8 L26 18 C26 23 21 27 16 29 C11 27 6 23 6 18 L6 8 Z" fill="#1A7A3C"/>
+  <!-- NG letters -->
+  <text x="16" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="11" fill="white">NG</text>
+</svg>

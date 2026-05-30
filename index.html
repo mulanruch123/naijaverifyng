@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Security Headers (meta-layer) -->
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' 'unsafe-eval';
+               style-src 'self' 'unsafe-inline' https://api.fontshare.com https://fonts.googleapis.com;
+               font-src 'self' https://api.fontshare.com https://cdn.fontshare.com https://fonts.gstatic.com;
+               connect-src 'self' https://naijaverifyng.onrender.com https://open.er-api.com;
+               img-src 'self' data: https: blob:;
+               frame-ancestors 'none';" />
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-CTL2vOxg-v41.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>NaijaVerifyNG — Nigerian ID Verification &amp; Diaspora Money Transfer</title>
+    <meta name="description" content="NaijaVerifyNG: Compare Nigerian NIN &amp; BVN identity verification providers, and send money from the US, UK, Canada to Nigeria and Africa at the best rates. Trusted by businesses, merchants, and individuals." />
+    <meta name="keywords" content="Nigerian ID verification, NIN verification, BVN verification, money transfer Nigeria, diaspora remittance, send money Nigeria, KYC Nigeria, NaijaVerifyNG" />
+    <meta name="author" content="NaijaVerifyNG" />
+    <link rel="canonical" href="https://www.naijaverifyng.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NaijaVerifyNG" />
+    <meta property="og:title" content="NaijaVerifyNG — ID Verification &amp; Money Transfer to Nigeria" />
+    <meta property="og:description" content="Compare Nigerian NIN &amp; BVN ID verification providers. Send money from the US, UK, Canada to Nigeria and Africa. Trusted diaspora-first platform." />
+    <meta property="og:url" content="https://www.naijaverifyng.com/" />
+    <meta property="og:image" content="https://www.naijaverifyng.com/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NaijaVerifyNG — ID Verification &amp; Money Transfer" />
+    <meta name="twitter:description" content="Compare NIN &amp; BVN providers. Send money to Nigeria from the US, UK, Canada and beyond." />
+    <meta name="twitter:image" content="https://www.naijaverifyng.com/og-image.png" />
+
+    <!-- Fonts (with SRI where available; fontshare uses dynamic CSS so we use crossorigin) -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=general-sans@400,500,600&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- GitHub Pages SPA redirect handler: converts ?p=/path back to /#/path -->
+    <!-- (No sessionStorage used — hash routing preserves routes natively) -->
+    <script>
+      (function () {
+        // Handle the ?p= query param set by 404.html for non-hash URLs
+        var query = window.location.search;
+        if (query) {
+          var params = query.slice(1).split('&').reduce(function (acc, pair) {
+            var parts = pair.split('=');
+            acc[decodeURIComponent(parts[0])] = decodeURIComponent(parts.slice(1).join('=').replace(/~and~/g, '&'));
+            return acc;
+          }, {});
+          if (params.p !== undefined) {
+            window.history.replaceState(
+              null, null,
+              location.pathname.slice(0, -1) +
+              (params.p || '/') +
+              (params.q ? '?' + params.q : '') +
+              location.hash
+            );
+          }
+        }
+      }());
+    </script>
+    <script type="module" crossorigin src="./assets/index-BuqrY4L2-v42.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-h_Wz06Yz-v41.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

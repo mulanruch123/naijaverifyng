@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaijaVerifyNG — Redirecting…</title>
+  <meta name="robots" content="noindex" />
+  <!--
+    GitHub Pages SPA redirect trick.
+    When GitHub Pages serves a 404 (because it doesn't know about hash routes),
+    this page captures the URL, converts it to a hash-based route, and redirects
+    back to index.html so the React router can handle it.
+
+    Reference: https://github.com/rafgraph/spa-github-pages
+  -->
+  <script>
+    (function () {
+      var segmentCount = 0; // Set to 1 if the site is in a project subdirectory (e.g. username.github.io/repo)
+      var l = window.location;
+      // Build the redirect URL preserving path, query, and hash as a hash route
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    }());
+  </script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: hsl(222, 72%, 22%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 2rem;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-top-color: hsl(38, 92%, 50%);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 1.5rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { font-size: 1.25rem; font-weight: 600; margin: 0 0 0.5rem; }
+    p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin: 0; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="spinner"></div>
+    <h1>NaijaVerifyNG</h1>
+    <p>Redirecting you to the right page…</p>
+  </div>
+</body>
+</html>

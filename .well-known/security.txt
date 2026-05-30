@@ -1,0 +1,12 @@
+Contact: mailto:info@naijaverifyng.com
+Contact: tel:+14045534284
+Expires: 2027-05-28T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.naijaverifyng.com/.well-known/security.txt
+Policy: https://www.naijaverifyng.com/#/privacy
+
+# NaijaVerifyNG LLC — Security Disclosure Policy
+# If you discover a security vulnerability on NaijaVerifyNG.com,
+# please report it responsibly to info@naijaverifyng.com.
+# We take all security reports seriously and will respond within 48 hours.
+# We appreciate responsible disclosure and will acknowledge your contribution.

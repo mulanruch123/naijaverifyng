@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow any admin or private paths if added in future
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.naijaverifyng.com/sitemap.xml
+
+# Crawl delay — be polite
+Crawl-delay: 2
